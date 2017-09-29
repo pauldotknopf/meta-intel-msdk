@@ -1,6 +1,8 @@
 SUMMARY = "Intel Media SDK samples and binaries"
 LICENSE = "Proprietary"
-LIC_FILES_CHKSUM = "file://opt/intel/mediasdk/include/mfxcommon.h;beginline=3;endline=25;md5=bfb4a41e79398c99c4af85128bb4eb77"
+LIC_FILES_CHKSUM = "file://opt/intel/mediasdk/include/mfxcommon.h;beginline=3;endline=25;md5=a193f7859c930260e0ac464c81b56ffa"
+
+RPM_PATH="${THISDIR}/files"
 
 SRC_URI = "file://${RPM_PATH}/intel-linux-mediasdk-${PV}-*.rpm;subdir=${BP};name=msdk-rpm \
            file://${RPM_PATH}/intel-linux-mediasdk-devel-${PV}-*.rpm;subdir=${BP};name=msdk-rpm"
